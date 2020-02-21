@@ -25,3 +25,12 @@ function MCD(a,b) {
     return b; 
 }
 console.log(MCD(x,y));
+
+function mcdRecursive(a,b)
+{
+  if (b!=0)
+    return mcdRecursive(b,a%b);
+  return a;
+}
+
+console.log(mcdRecursive(x,y));
